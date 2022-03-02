@@ -15,6 +15,7 @@ set(LLA_BUILD_UNITTEST FALSE CACHE BOOL "Build unittests")
 
 include(GenerateExportHeader)
 # Perform Conan basic setup to import targets etc
+message(STATUS "DIR: ${CMAKE_CURRENT_BINARY_DIR}")
 include(${CMAKE_CURRENT_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
