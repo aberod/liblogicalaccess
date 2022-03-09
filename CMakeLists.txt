@@ -162,4 +162,6 @@ endif ()
 install(FILES liblogicalaccess.config DESTINATION ${SYSCONF_INSTALL_DIR})
 
 # This perform the "real installation" of header files.
+message(STATUS "SOURCE DIR: ${CMAKE_SOURCE_DIR}")
+message(STATUS "CURRENT SOURCE DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/logicalaccess DESTINATION include/)
